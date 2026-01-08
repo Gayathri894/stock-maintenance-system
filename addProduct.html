@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Product</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <script>
+    if (!localStorage.getItem("loggedIn") || localStorage.getItem("currentRole") !== "admin") {
+      alert("Access Denied! Admin only.");
+      window.location.href = "dashboard.html";
+    }
+  </script>
+
+  <div class="form-box">
+    <h2>Add Product</h2>
+
+    <input id="name" type="text" placeholder="Product Name">
+    <input id="category" type="text" placeholder="Category">
+    <input id="price" type="number" placeholder="Price">
+    <input id="quantity" type="number" placeholder="Quantity">
+
+    <button onclick="addProduct()">Add Product</button>
+    <a href="dashboard.html">Back to Dashboard</a>
+  </div>
+
+  <script src="js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== Body Background ===== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== App Title (Login & Signup ONLY) ===== */
+.app-title {
+  position: absolute;
+  top: 25px;
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ===== Common Card Style ===== */
+.login-box,
+.form-box,
+.dashboard-card,
+.table-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 380px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* Wider card for product table */
+.table-box.wide {
+  width: 750px;
+}
+
+/* ===== Headings ===== */
+h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: 600;
+}
+
+/* ===== Inputs & Select ===== */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* ===== Buttons ===== */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #4facfe;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #00c6ff;
+}
+
+/* Logout button */
+.logout-btn {
+  background: #ff4d4d;
+}
+
+.logout-btn:hover {
+  background: #e60000;
+}
+
+/* ===== Links ===== */
+a {
+  display: inline-block;
+  margin-top: 16px;
+  text-decoration: none;
+  color: #4facfe;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.back-link {
+  font-weight: 500;
+}
+
+/* Signup / Login link */
+.link {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+/* ===== Error Message ===== */
+#error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ===== Dashboard ===== */
+.dashboard-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dash-btn {
+  padding: 12px;
+  background: #4facfe;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.dash-btn:hover {
+  background: #00c6ff;
+}
+
+/* ===== Product Table ===== */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+}
+
+.product-table th {
+  background: #f4f6f8;
+  font-weight: 600;
+}
+
+/* ===== Status ===== */
+.low {
+  color: red;
+  font-weight: 600;
+}
+
+/* Delete button inside table */
+.product-table button {
+  width: auto;
+  padding: 6px 12px;
+  font-size: 13px;
+  background: #ff4d4d;
+}
+
+.product-table button:hover {
+  background: #e60000;
+}

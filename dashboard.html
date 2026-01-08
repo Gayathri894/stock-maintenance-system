@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="dashboard-card">
+    <h2 id="roleTitle">Dashboard</h2>
+
+    <!-- ADMIN ACTIONS -->
+    <div class="dashboard-actions" id="adminActions">
+      <a href="addProduct.html" class="dash-btn">Add Product</a>
+      <a href="products.html" class="dash-btn">View Products</a>
+    </div>
+
+    <!-- STAFF ACTIONS -->
+    <div class="dashboard-actions" id="staffActions">
+      <a href="products.html" class="dash-btn">View Products</a>
+    </div>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

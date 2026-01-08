@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Stock Maintenance System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1 class="app-title">Stock Maintenance System</h1>
+
+  <div class="login-box">
+    <h2>Create Account</h2>
+
+    <input type="text" id="newUsername" placeholder="Username">
+    <input type="password" id="newPassword" placeholder="Password">
+
+    <select id="role">
+      <option value="">Select Role</option>
+      <option value="admin">Admin</option>
+      <option value="staff">Staff</option>
+    </select>
+
+    <button onclick="signup()">Sign Up</button>
+
+    <p class="link">
+      Already have an account? <a href="index.html">Login</a>
+    </p>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
